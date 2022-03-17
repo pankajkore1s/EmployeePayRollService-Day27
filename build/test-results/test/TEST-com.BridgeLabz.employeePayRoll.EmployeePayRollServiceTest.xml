@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.BridgeLabz.employeePayRoll.EmployeePayRollServiceTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2022-03-17T09:36:39" hostname="DESKTOP-7O2OJUS" time="0.086">
+<testsuite name="com.BridgeLabz.employeePayRoll.EmployeePayRollServiceTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2022-03-17T10:17:51" hostname="DESKTOP-7O2OJUS" time="0.087">
   <properties/>
-  <testcase name="printWelcomeMessage()" classname="com.BridgeLabz.employeePayRoll.EmployeePayRollServiceTest" time="0.041"/>
-  <testcase name="given3Employees_WhenWrittenTo_FileShouldMatch_EmployeeEntries()" classname="com.BridgeLabz.employeePayRoll.EmployeePayRollServiceTest" time="0.044"/>
+  <testcase name="printWelcomeMessage()" classname="com.BridgeLabz.employeePayRoll.EmployeePayRollServiceTest" time="0.034"/>
+  <testcase name="given3Employees_WhenWrittenTo_FileShouldMatch_EmployeeEntries()" classname="com.BridgeLabz.employeePayRoll.EmployeePayRollServiceTest" time="0.047"/>
+  <testcase name="givenFileOn_ReadingFrom_File_ShouldMatch_EmployeeCount()" classname="com.BridgeLabz.employeePayRoll.EmployeePayRollServiceTest" time="0.004"/>
   <system-out><![CDATA[Welcome To The Employee PayRoll Service
+EmployeePayrollData [id=1, name=Jeff Bezos, salary=100000.0]
+EmployeePayrollData [id=2, name=Bill Gates, salary=500000.0]
+EmployeePayrollData [id=3, name=Elon Musk, salary=4000000.0]
 EmployeePayrollData [id=1, name=Jeff Bezos, salary=100000.0]
 EmployeePayrollData [id=2, name=Bill Gates, salary=500000.0]
 EmployeePayrollData [id=3, name=Elon Musk, salary=4000000.0]

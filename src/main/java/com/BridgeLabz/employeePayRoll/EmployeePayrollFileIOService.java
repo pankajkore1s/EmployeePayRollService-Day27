@@ -2,9 +2,9 @@ package com.BridgeLabz.employeePayRoll;
 
 import java.io.File;
 import java.io.IOException;
-import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Paths;
+import java.util.ArrayList;
 import java.util.List;
 
 public class EmployeePayrollFileIOService {
@@ -42,5 +42,16 @@ public class EmployeePayrollFileIOService {
             e.printStackTrace();
         }
         return entries;
+    }
+    ///reading data from file///
+    public List<EmployeePayrollData> readData(){
+        List<EmployeePayrollData>employeePayrollList=new ArrayList<>();
+        try{
+            Files.lines(new File(PAYROLL_FILE_NAME).toPath()).map(line -> line.trim()).forEach(line -> System.out.println(line));
+        }
+        catch(IOException e){
+            e.printStackTrace();
+        }
+        return employeePayrollList;
     }
 }
