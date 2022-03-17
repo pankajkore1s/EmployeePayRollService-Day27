@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.BridgeLabz.employeePayRoll.EmployeePayRollServiceTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2022-03-17T09:15:29" hostname="DESKTOP-7O2OJUS" time="0.174">
+  <properties/>
+  <testcase name="printWelcomeMessage()" classname="com.BridgeLabz.employeePayRoll.EmployeePayRollServiceTest" time="0.045"/>
+  <testcase name="given3Employees_WhenWrittenTo_FileShouldMatch_EmployeeEntries()" classname="com.BridgeLabz.employeePayRoll.EmployeePayRollServiceTest" time="0.128"/>
+  <system-out><![CDATA[Welcome To The Employee PayRoll Service
+EmployeePayrollData [id=1, name=Jeff Bezos, salary=100000.0]
+EmployeePayrollData [id=2, name=Bill Gates, salary=500000.0]
+EmployeePayrollData [id=3, name=Elon Musk, salary=4000000.0]
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
