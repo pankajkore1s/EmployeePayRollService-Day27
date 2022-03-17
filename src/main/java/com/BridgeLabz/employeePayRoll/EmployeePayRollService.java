@@ -17,6 +17,7 @@ public class EmployeePayRollService {
     public EmployeePayRollService(){
         employeePayrollList=new ArrayList<>();
     }
+    ///main method to take input from user///
     public static void main(String [] args){
         EmployeePayRollService employeePayRollService =new EmployeePayRollService();
         employeePayRollService.printWelcomeMessage();
