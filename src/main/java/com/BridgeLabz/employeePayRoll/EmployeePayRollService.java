@@ -62,4 +62,13 @@ public class EmployeePayRollService {
             this.employeePayrollList=new EmployeePayrollFileIOService().readData();
         return employeePayrollList;
     }
+    /***
+     * read employee payroll data from fatabase
+     */
+    public List<EmployeePayrollData>readEmployeePayRollData(IOService ioService)
+    {
+        if(ioService.equals(IOService.DB_IO))
+            this.employeePayrollList=new EmployeePayrollDBService().readData();
+        return this.employeePayrollList;
+    }
 }

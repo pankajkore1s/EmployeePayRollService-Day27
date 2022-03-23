@@ -23,15 +23,25 @@ public class EmployeePayrollJDBC {
         } catch (Exception e) {
             e.printStackTrace();
         }
-        /**
-         * printing the List of drivers in driver manager class
-         */
-        {
-            Enumeration<Driver> driverList = DriverManager.getDrivers();
-            while (driverList.hasMoreElements()) {
-                Driver driverClass = (Driver) driverList.nextElement();
-                System.out.println(" " + driverClass.getClass().getName());
+        try (
+                Connection conn = DriverManager.getConnection(jdbcURL, userName, password);
+                Statement stmt = conn.createStatement();
+                ResultSet rs = stmt.executeQuery(QUERY);
+
+        ) {
+            while (rs.next()) {
+                //Display values
+                System.out.print(rs.getInt("id"));
+                System.out.print(rs.getString("name"));
+                System.out.print(rs.getDouble("salary"));
+                System.out.print(rs.getDate("start"));
             }
         }
+
+        catch (SQLException e) {
+            e.printStackTrace();
+        }
+
+
     }
 }
